@@ -35,39 +35,42 @@ a {
 	flex-direction: column;
 } */
 
-.page-content {
-	width:100%;
-}
-
-
-#nav {
-	left: 0%;
-	right: 0%;
-	background-color: white;
-	position: fixed;
-	top: -70px;
+.content {
+	margin-top: 70px;
+	margin-left: 5%; margin-right: 5%;
+	text-align: center;
 	display: block;
-	transition: top 0.4s;
-	box-shadow: 2px 2px 5px #aaaaaa;
-	z-index: 1;
-
 }
 
-.nav-item:first-child {
+.nav {
+    z-index: 100;
+    display: block;
+    position: fixed;
+    top: 0; left:0; width: 100%;
+    background-color: #FFF;
+    box-shadow: 0 4px 2px -2px #CCC;
+}
+
+.nav li:first-child {
 	float: left;
 }
 
-.nav-item {
+.nav li {
 	color: #064b1e;
 	float: right;
 	display: block;
 	text-align: center;
-	padding: 10px;
+	padding: 20px;
 	text-decoration: none;
-	font-size: 17px;
+	font-size: 20px;
+	font-weight: 300;
 }
 
-.nav-item:hover {
-	color: #064b1e;
+.nav li:hover {
+	color: #1e793e;
 	transition: 0.5s;
+}
+
+#opening {
+	padding-top: 70px;
 }
